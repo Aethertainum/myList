@@ -1,0 +1,24 @@
+{
+  "name": "mylist",
+  "version": "1.0.0",
+  "description": "An awesome playlist website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unobtainiumrock/mylist.git"
+  },
+  "author": "Nicholas Fleischhauer and Trevor Pace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unobtainiumrock/mylist/issues"
+  },
+  "homepage": "https://github.com/Unobtainiumrock/mylist#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.5.0"
+  }
+}
