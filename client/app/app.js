@@ -20,7 +20,7 @@
         }).then(function(res) {
           $scope.testBox = res.data;
         });
-        console.log("I was invokved!");
+        console.log("I was invokved! This is a test");
       };
     }]);
   })();
