@@ -1,0 +1,34 @@
+{
+  "name": "mylist",
+  "description": "An awesome playlist website",
+  "main": "index.js",
+  "authors": [
+    "Nicholas Fleischhauer and Trevor Pace"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Unobtainiumrock/myList",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-material": "^1.0.9",
+    "Materialize": "materialize#^0.97.6",
+    "angular-cookies": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
+    "angular-messages": "^1.5.7",
+    "angular-material-icons": "^0.7.0",
+    "ng-dialog": "^0.6.2",
+    "underscore": "^1.8.3",   
+    "angular-ui-router": "^0.3.1"
+  },
+  "resolutions": {
+    "angular": "1.5.5"
+  }
+}
