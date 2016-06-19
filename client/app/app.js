@@ -1,9 +1,12 @@
 (function() {
   'use strict';
     angular
-      .module('app',[])
-      .controller('appController', ['$scope', '$http', function appController($scope,$http) {
+      .module('app',['auth0', 'angular-storage', 'angular-jwt', 'ui.router','ngDialog'])
+      .controller('appController', ['$scope', '$http', 'ngDialog', function appController($scope,$http,ngDialog) {
       $scope.test = "Hello World!";
+      $scope.clickToOpen = function() {
+        ngDialog.open({ template: 'popupTmpl.html', className: 'ngdialog-theme-default' });
+      };
 
       // Adds Video to db. Come back later and make this call a function that takes the id of the data written to DB,
       // and adds the id to the current logged user's object with the associated user-specified listName
@@ -13,7 +16,7 @@
           List2: {},
           List3: {}
        }*/
-      $scope.addVideoToDb = function() {
+      $scope.addVideoToDb = function() {  
         $http({
           method: 'POST',
           url: '/videos',
@@ -24,4 +27,4 @@
       };
     }]);
   })();
-  {}
+  
