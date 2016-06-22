@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="app">
 <head>
   <meta charset="UTF-8">
   <title>My List</title>
@@ -44,11 +44,13 @@
   <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
   
   <!-- My scripts -->
-  <script src="/app/app.js"></script>
+  <script src="/app/misc/app.js"></script>
   <script src="bower_components/ng-dialog/js/ngDialog.js"></script>
+  <script src="/app/app.module.js"></script>
+  <script src="/app/core/core.module.js"></script>
 
   </head>
-<body ng-app="app" ng-controller="appController">
+<body ng-controller="appController">
   <h2>{{ test }}</h2>
   <button ng-click="addVideoToDb()">Add Video to List</button>
   <script type="text/ng-template" id="templateId">
