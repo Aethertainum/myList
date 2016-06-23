@@ -1,7 +1,7 @@
 (function() {
   'use strict';
     angular
-      .module('app',['auth0', 'angular-storage', 'angular-jwt', 'ui.router','ngDialog'])
+      .module('app.misc',['auth0', 'angular-storage', 'angular-jwt', 'ngDialog'])
       .controller('appController', ['$scope', '$http', 'ngDialog', function appController($scope,$http,ngDialog) {
       $scope.test = "Hello World!";
       $scope.clickToOpen = function() {
