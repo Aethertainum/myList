@@ -1,8 +1,8 @@
 (function() {
   'use strict';
     angular
-      .module('app.misc',['auth0', 'angular-storage', 'angular-jwt', 'ngDialog'])
-      .controller('appController', ['$scope', '$http', 'ngDialog', function appController($scope,$http,ngDialog) {
+      .module('app.misc',[])
+      .controller('appController', ['$scope', '$http', function appController($scope,$http) {
       $scope.test = "Hello World!";
       $scope.clickToOpen = function() {
         ngDialog.open({ template: 'popupTmpl.html', className: 'ngdialog-theme-default' });
