@@ -20,6 +20,7 @@
     /*
      *Feature Areas
      */
+     'app.auth0',
      'app.misc'
     ]);
 })();
