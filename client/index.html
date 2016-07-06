@@ -52,10 +52,18 @@
   <script src="app/components/auth/auth0.module.js"></script>
   <script src="/app/components/blocks/logger/logger.module.js"></script>
   <script src="/app/components/blocks/exception/exception.module.js"></script>
+  
+  <!-- Dashboard -->
+  <script src="/app/components/dashboard/dashboard.module.js"></script>
+  <script src="/app/components/dashboard/config.route.js"></script>
+  <script src="/app/components/dashboard/dashboard.js"></script>
+
+
 
   </head>
 <body ng-controller="appController">
-  <h2>{{ test }}</h2>
+  <div ui-view></div>
+  <h3>{{ test }}</h3>
   <button ng-click="addVideoToDb()">Add Video to List</button>
   <script type="text/ng-template" id="templateId">
     <h1>Template heading</h1>

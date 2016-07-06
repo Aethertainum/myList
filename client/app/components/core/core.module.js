@@ -3,7 +3,7 @@
 
   angular.module('app.core',[
     /*
-     * Angular modules
+     * Angular modules maybe remove storage and jwt?
      */
     'ui.router', 'angular-storage', 'angular-jwt',
     /*

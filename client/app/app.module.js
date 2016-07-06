@@ -21,6 +21,7 @@
      *Feature Areas
      */
      'app.auth0',
+     'app.dashboard',
      'app.misc'
     ]);
-})();
+})();   
